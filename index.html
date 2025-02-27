@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock and Sale Calculator</h1>
+        
+        <div class="section">
+            <h3>Previous Stock Available</h3>
+            <label for="P-P">Pati: </label>
+            <input type="number" id="P-P" placeholder="Enter Pati">
+            <label for="P-T">Trays: </label>
+            <input type="number" id="P-T" placeholder="Enter Trays">
+            <label for="P-E">Eggs: </label>
+            <input type="number" id="P-E" placeholder="Enter Eggs">
+        </div>
+
+        <div class="section">
+            <h3>Sale Details Today</h3>
+            <label for="S-P">Pati: </label>
+            <input type="number" id="S-P" placeholder="Enter Pati Sold">
+            <label for="S-T">Trays: </label>
+            <input type="number" id="S-T" placeholder="Enter Trays Sold">
+            <label for="S-E">Eggs: </label>
+            <input type="number" id="S-E" placeholder="Enter Eggs Sold">
+        </div>
+
+        <button onclick="calculateStock()">Calculate Final Stock</button>
+
+        <div class="final">
+            <h3>Final Stock</h3>
+            <p>Patis: <span id="final-p">0</span></p>
+            <p>Trays: <span id="final-t">0</span></p>
+            <p>Eggs: <span id="final-s">0</span></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
